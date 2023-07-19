@@ -21,8 +21,14 @@ def encoder(string):
             new_string += '1'
         elif string[i] == '9':
             new_string += '2'
+        else:
+            pass
     return new_string
 
-input()
+print('Enter the password you want to encode: ')
 
-print(encoder(old))
+string = input()
+
+encoded_string = encoder(string)
+
+print(encoded_string)
